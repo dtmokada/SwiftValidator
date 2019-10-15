@@ -50,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A5B80402355F4F900C4F55B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		62C1821C1C6312F5003788E7 /* ExactLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactLengthRule.swift; sourceTree = "<group>"; };
 		62D1AE1B1A1E6D4400E4DFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D1AE1C1A1E6D4400E4DFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		62D1AE0E1A1E6D4400E4DFF8 = {
 			isa = PBXGroup;
 			children = (
+				5A5B80402355F4F900C4F55B /* Package.swift */,
 				62D1AE191A1E6D4400E4DFF8 /* Validator */,
 				62D1AE2F1A1E6D4500E4DFF8 /* ValidatorTests */,
 				FB465CB41B9884F400398388 /* SwiftValidator */,
@@ -334,7 +336,7 @@
 				TargetAttributes = {
 					62D1AE2B1A1E6D4500E4DFF8 = {
 						CreatedOnToolsVersion = 6.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 1100;
 						TestTargetID = 62D1AE161A1E6D4400E4DFF8;
 					};
 					FB465CB21B9884F400398388 = {
@@ -588,6 +590,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jeffpotter.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validator.app/Validator";
 			};
 			name = Debug;
@@ -601,6 +605,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jeffpotter.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validator.app/Validator";
 			};
 			name = Release;
